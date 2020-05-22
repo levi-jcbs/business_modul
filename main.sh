@@ -325,64 +325,6 @@ while true; do
     o=$(( $o + ( $oQ ) ))
 
 
-    
-    # X    X
-    # X    X
-    # XXXXXX
-    # X    X
-    # X    X
-
-    if [ $oh -eq $(( $LINES / 2 )) ]; then
-	addon='4;'
-    else
-	addon=''
-    fi
-    
-    if [ $first -eq 0 ]; then
-	tput cup $oh $(( $i - 1 ))
-	echo -en "\033[0;${addon}1;33m°\033[0m"
-    fi
-    
-    if [ $(( ( $LINES / 2 ) + 20 - $h )) -eq $(( $LINES / 2 )) ]; then
-	addon='4;'
-    else
-	addon=''
-    fi
-    
-    tput cup $(( ( $LINES / 2 ) + 20 - $h )) $i
-    echo -en "\033[0;${addon}1;43m>\033[0m"
-
-    oh=$(( ( $LINES / 2 ) + 20 - $h ))
-    
-    ran=$(( $RANDOM % 6 ))
-    
-    if [ $ran -eq 0 ]; then
-	hQ=1
-    fi
-
-    if [ $ran -eq 1 ]; then
-	hQ=-1
-    fi
-
-    ran=$(( $RANDOM % 6 ))
-
-    if [ $h -ge 40 ]; then
-	if [ $ran -eq 0 ]; then
-	    hQ=-1
-	else
-	    hQ=0
-	fi
-    elif [ $h -le 1 ]; then
-	if [ $ran -eq 0 ]; then
-	    hQ=1
-	else
-	    hQ=0
-	fi
-    fi
-    
-    
-    h=$(( $h + ( $hQ ) ))
-
 
     
     # XXXXXX
