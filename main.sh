@@ -21,7 +21,7 @@ echo -en "\033[0;1m2"
 tput cup $(( $LINES / 2 )) 0
 echo -en "\033[0;4;1m1"
 
-tput cup $(( $LINES / 2 + 20 )) 0
+tput cup $(( $LINES / 2 + 19 )) 0
 echo -en "\033[0;1m-2"
 
 a=20
@@ -69,7 +69,7 @@ while true; do
 	tput cup $(( $LINES / 2 )) 0
 	echo -en "\033[0;4;1m1"
 	
-	tput cup $(( $LINES / 2 + 20 )) 0
+	tput cup $(( $LINES / 2 + 19 )) 0
 	echo -en "\033[0;1m-2"
 	
 	i=3
@@ -139,7 +139,7 @@ while true; do
 	else
 	    aQ=0
 	fi
-    elif [ $a -le 1 ]; then
+    elif [ $a -le 5 ]; then
 	if [ $ran -eq 0 ]; then
 	    aQ=1
 	else
@@ -196,7 +196,7 @@ while true; do
 	else
 	    bQ=0
 	fi
-    elif [ $b -le 1 ]; then
+    elif [ $b -le 5 ]; then
 	if [ $ran -eq 0 ]; then
 	    bQ=1
 	else
@@ -254,7 +254,7 @@ while true; do
 	else
 	    cQ=0
 	fi
-    elif [ $c -le 1 ]; then
+    elif [ $c -le 5 ]; then
 	if [ $ran -eq 0 ]; then
 	    cQ=1
 	else
@@ -313,7 +313,7 @@ while true; do
 	else
 	    oQ=0
 	fi
-    elif [ $o -le 1 ]; then
+    elif [ $o -le 5 ]; then
 	if [ $ran -eq 0 ]; then
 	    oQ=1
 	else
@@ -373,7 +373,7 @@ while true; do
 	else
 	    zQ=0
 	fi
-    elif [ $z -le 1 ]; then
+    elif [ $z -le 5 ]; then
 	if [ $ran -eq 0 ]; then
 	    zQ=1
 	else
